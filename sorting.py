@@ -1,5 +1,6 @@
 import random
-#Berikut adalah fungsi merge_sort dimana operasi mergenya akan dijalankan disini
+
+# Fungsi merge_sort
 def merge_sort(arr):
     if len(arr) > 1:
         mid = len(arr) // 2
@@ -28,7 +29,8 @@ def merge_sort(arr):
             arr[k] = right_half[j]
             j += 1
             k += 1
-#ini fungsi untuk quick sort-nya dimana operasi sortingnya akan dijalankan disini
+
+# Fungsi quick_sort
 def quick_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -42,9 +44,13 @@ def quick_sort(arr):
 def main():
     # Ini adalah array original atau array yang ditampilkan di soal.
     original_array = [1, 5, 6, 4, 3, 3, 7, 7, 9, 0, 1, 1, 3, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-     # Setelah program dijalankan, akan tampil opsi-opsi dimana kita dapat memilih ingin melihat contoh best case, worst case, dan average case.
-     #Dalam merge sort, kompleksitas waktu untuk best case adalah O(nlogn), untuk worst case adalah O(nlogn), dan averagenya adalah O(nlogn).
-     # dalam quick sort sendiri, umunya best case memiliki kompleksitas waktu O(nlogn), worst case O(n^2), dan averagenya adalah O(nlogn).
+    
+    # Tampilkan array original sebelum masuk ke pilihan
+    print("Array Original:", original_array)
+
+    # Setelah program dijalankan, akan tampil opsi-opsi dimana kita dapat memilih ingin melihat contoh best case, worst case, dan average case.
+    # Dalam merge sort, kompleksitas waktu untuk best case adalah O(nlogn), untuk worst case adalah O(nlogn), dan averagenya adalah O(nlogn).
+    # dalam quick sort sendiri, umumnya best case memiliki kompleksitas waktu O(nlogn), worst case O(n^2), dan averagenya adalah O(nlogn).
     while True:
         print("\nPilih jenis kasus untuk analisis:")
         print("1. Best Case (sudah terurut)")
@@ -54,7 +60,6 @@ def main():
         choice = int(input("Masukkan pilihan Anda (1/2/3/4): "))
         
         if choice == 1:
-           
             # Bagian pertama atau 1 adalah Best Case dimana contohnya bisa berupa array yang acak tadi kita urutkan secara ascending seperti di output nanti.
             array = sorted(original_array)
             print("\nArray Best Case:", array)
@@ -76,7 +81,7 @@ def main():
             else:
                 print(f"Angka {target} tidak ditemukan dalam array.")
         elif choice == 4:
-            #untuk bagian 4 ini sendiri adalah opsi ketika pengguna sudah tidak ingin lagi melihat kasus best, worst, dan average atau kelaur dari program.
+            #untuk bagian 4 ini sendiri adalah opsi ketika pengguna sudah tidak ingin lagi melihat kasus best, worst, dan average atau keluar dari program.
             # Keluar dari program
             print("Telah keluar dari program")
             break
