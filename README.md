@@ -6,6 +6,9 @@ Kelas : TI B
 # Analisis Program
 
 **Analisis program sorting.py**: Dibuat pada file program langsung
+
+
+
 **Analisis best case pada naive.py** :
 pada program ini, best case terjadi ketika array telah diurutkan secara ascending atau dari yang terkecil ke yang terbesar. Kompleksitas waktu pada best case ini adalah O(n) sebab data telah terurut dan hanya membutuhkan satu percobaan untuk memverifikasi bahwa array telah terurut.
 
